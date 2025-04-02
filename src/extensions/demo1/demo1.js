@@ -1,4 +1,4 @@
-import html from '@distui/demo/main/index.html?raw'
+import html from '@distui/demo1/Demo1Widget/index.html?raw'
 
 const reearth = globalThis.reearth
 reearth.ui.show(html)

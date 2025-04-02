@@ -1,0 +1,9 @@
+html,
+body {
+  width: 500px;
+  background-color: #ededed;
+}
+
+:root {
+  --background: 'transparent'; /* Define the initial value of your CSS variable */
+}

@@ -18,15 +18,15 @@ For more details, please refer to [reearth-plugins](https://github.com/reearth-p
 * Run with local server
 
 ```shell
-npm run dev:demo:main
+npm run dev:demo1:main 
 ```
 * Build
 ```shell
-npm run build:demo
+npm run build:demo1
 ```
 * Packaging
 ```shell
-npm run zip
+npm run pkg
 ```
 
 ---

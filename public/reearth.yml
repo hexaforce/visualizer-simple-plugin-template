@@ -2,9 +2,21 @@ id: visualizer-simple-plugin-template
 name: Visualizer plugin simple template
 version: 1.0.0
 extensions:
-  - id: demo
+  - id: demo1
     type: widget
-    name: Demo
+    name: Demo1 widget
+    schema:
+      groups:
+        - id: appearance
+          title: Appearance
+          fields:
+            - id: primary_color
+              title: Primary color
+              type: string
+              ui: color
+  - id: demo2
+    type: widget
+    name: Demo2 widget
     schema:
       groups:
         - id: appearance

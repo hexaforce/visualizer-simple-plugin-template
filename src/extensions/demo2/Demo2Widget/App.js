@@ -16,7 +16,7 @@ function App() {
 
   const title = document.createElement('h3')
   title.className = 'card-title'
-  title.textContent = 'Hello world'
+  title.textContent = 'Hello world2'
 
   const desc = document.createElement('p')
   desc.className = 'card-description'

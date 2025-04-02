@@ -4,11 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev:demo:main": "cross-env EXTENSION_NAME=demo UI_NAME=main vite -c configs/ui.js",
-    "build:demo:main": "cross-env EXTENSION_NAME=demo UI_NAME=main vite build -c configs/ui.js",
-    "build:demo:extension": "cross-env EXTENSION_NAME=demo vite build -c configs/extension.js",
-    "build:demo": "run-s build:demo:main build:demo:extension",
+    "dev:demo1:main": "cross-env EXTENSION_NAME=demo1 UI_NAME=Demo1Widget vite -c configs/ui.js",
+    "build:demo1:main": "cross-env EXTENSION_NAME=demo1 UI_NAME=Demo1Widget vite build -c configs/ui.js",
+    "build:demo1:extension": "cross-env EXTENSION_NAME=demo1 vite build -c configs/extension.js",
+    "build:demo1": "run-s build:demo1:main build:demo1:extension",
+    "dev:demo2:main": "cross-env EXTENSION_NAME=demo2 UI_NAME=Demo2Widget vite -c configs/ui.js",
+    "build:demo2:main": "cross-env EXTENSION_NAME=demo2 UI_NAME=Demo2Widget vite build -c configs/ui.js",
+    "build:demo2:extension": "cross-env EXTENSION_NAME=demo2 vite build -c configs/extension.js",
+    "build:demo2": "run-s build:demo2:main build:demo2:extension",
     "zip": "node ./zip.mjs",
+    "pkg": "run-s build:demo1 build:demo2 zip",
     "fmt": "prettier --write \"./**/*.{js,mjs,css,html}\""
   },
   "devDependencies": {
